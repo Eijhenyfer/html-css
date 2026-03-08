@@ -6,19 +6,27 @@
     <title>Desafio astronauta</title>
     <style>
         div#fora{
-            height: 97vh;
-            max-width: 400px;
+            height: 92vh;
             background-color: blue;
             background-image: url(imagens/espaco.jpg);
             position: relative;
+            background-size: 100% 100%;
+            padding: 20px;
         }
         div#dentro{
-            background: url(imagens/astronauta.png) /contain no-repeat fixed;
+            background-image: url(imagens/astronauta.png);
             position: absolute;
             top: 50%;
             left: 50%;
+            height: 200px;
+            width: 200px;
             transform: translate(-50%, -50%);
             background-attachment: fixed;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        img{
+            max-width: 100px;
         }
     </style>
 </head>
