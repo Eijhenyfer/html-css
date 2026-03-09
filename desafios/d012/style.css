@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root{
+    --fonte1: 'Passion One';
+    --font2: verdana;
+    --font3: 'Sriracha', cursive;
+}
+header{
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 103%;
+    height: 150px;
+    margin: -22px -10px 10px;
+}
+header>h1{
+    font: bold 2em var(--fonte1);
+    padding: 20px;
+}
+header>p{
+    font: normal 1em var(--font2);
+}
+header>p>a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+header>p>a:hover{
+    text-decoration: underline;
+}
+main{
+    margin-top: -10px;
+}
+main>section{
+    width: 103%;
+    height: 400px;
+    margin: 0px -10px 0px;
+    padding: 20px;
+}
+main>section>p{
+    font: normal 0.8em var(--font3);
+    color: black;
+}
+main>section#sombra{
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+}
+main>section#flor{
+    background-image: url('imagens/background001.jpg'); background-size: cover;
+    margin: 0px -10px 0px;
+    background-attachment: scroll;
+}
+main>section#flor>p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.397);
+    width: 25%;
+    height: 300px;
+    padding: 10px;
+    margin: 5px;
+}
+main>section#cartas{
+    background-image: url('imagens/background002.jpg'); background-size: cover;
+    padding: 10px 10px 10px;
+    margin: 0px -10px 0px;
+    background-attachment: scroll;
+}
+main>section#cartas>p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.397);
+    width: 25%;
+    padding: 10px;
+    margin: 5px;
+    height: 300px;
+}
+footer{
+    font: normal 1em var(--font2);
+    background-color: black;
+    color: white;
+    width: 103%;
+    padding: 1px;
+    margin: 10px -10px -22px;
+    text-align: center;
+}
+footer>p>a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+footer>p>a:hover{
+    text-decoration: underline;
+}
