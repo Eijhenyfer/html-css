@@ -11,6 +11,12 @@
             width: 500px;
             
         }
+        caption{
+            font-size: 1.5em;
+            padding: 5px;
+            color: #b16bc7;
+            background-color: rgb(241, 235, 235);
+        }
         td, th {
             border: 1px solid black;
             padding: 8px; 
@@ -30,10 +36,12 @@
         Estados do Brasil
     </h1>
     <table>
+        <caption>População dos Estados do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px
+                ;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -66,7 +74,7 @@
                 <td class="num">7.8 million</td>
             </tr>
             <tr>
-                <td>Goiás</td>
+                <td scope="row">Goiás</td>
                 <td class="num">6.5 million</td>
             </tr>
         </tbody>
