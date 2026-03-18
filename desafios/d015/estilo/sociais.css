@@ -15,6 +15,7 @@ a{
     text-align: center;
     text-decoration: none;
     padding: 15px;
+    width: 100vw;
 }
 a:hover{
     background-color: blue;
