@@ -10,11 +10,12 @@
         <p>
             <label for="iest">Estados</label>
             <select name="estados" id="ies">
-                <optgroup>
+                <option checked>--Escolha--</option>
+                <optgroup label="Região Sudeste">
                     <option value="RJ">Rio de Janeiro</option>
                     <option value="SP">São Paulo</option>
                 </optgroup>
-                <optgroup>
+                <optgroup label="Região Nordeste">
                     <option value="PE">Pernambuco</option>
                     <option value="RN">Rio Grande do Norte</option>
                 </optgroup>
@@ -22,8 +23,10 @@
         </p>
         <p>
             <label for="iprof">Profissão</label>
-            <datalist>
-
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador(a)</option>
+                <option value="proff">Professor(a)</option>
             </datalist>
         </p>
         <p>
