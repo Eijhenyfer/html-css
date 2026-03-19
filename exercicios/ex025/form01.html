@@ -7,7 +7,8 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <!--No GET os dados são expostos no link e no POST são "escondidos" mas dá pra achá-los no DevTools-->
         <p>
             <label for="inome">Nome: </label>
             <input type="text" name="nome" id="inome"> 
