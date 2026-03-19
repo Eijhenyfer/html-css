@@ -7,14 +7,14 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <form action="cadastro.php" method="post">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iusu">Usuário:</label>
-            <input type="text" name="usu" id="iusu" minlength="5" maxlength="12" size="12">
+            <input type="text" name="usu" id="iusu" minlength="5" maxlength="12" size="12" placeholder="Nome de usuário" required autocomplete="username">
         </p>
         <p>
             <label for="isen">Senha:</label>
-            <input type="password" name="sen" id="isen" minlength="8" maxlength="20" size="20">
+            <input type="password" name="sen" id="isen" minlength="8" maxlength="20" size="20" placeholder=" Mínimo 8 dígitos" required autocomplete="current-password">
         </p>
     </form>
 </body>
