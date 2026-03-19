@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist, textarea e select</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estados</label>
+            <select name="estados" id="ies">
+                <optgroup>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <datalist>
+
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg"></textarea>
+        </p>
+    </form>
+</body>
+</html>
