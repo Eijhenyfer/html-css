@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inasc">Ano de nascimento</label>
+            <input type="number" name="nasc" id="inasc" min="1920" max="2026" value="20000" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="idad">Aidade é:</label>
+            <output id="idad">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+    <script>
+        function calcIdade(){
+            let= new Date().getFullYear()
+            idad.innerHTML=Number(atual)-Number(inasc.value)
+        }
+    </script>
+</body>
+</html>
