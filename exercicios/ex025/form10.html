@@ -9,10 +9,10 @@
     <form action="cadastro.php" method="get">
         <p>
             <label for="inasc">Ano de nascimento</label>
-            <input type="number" name="nasc" id="inasc" min="1920" max="2026" value="20000" oninput="calcIdade()">
+            <input type="number" name="nasc" id="inasc" min="1920" max="2026" value="2000" oninput="calcIdade()">
         </p>
         <p>
-            <label for="idad">Aidade é:</label>
+            <label for="idad">A idade é:</label>
             <output id="idad">0</output>
         </p>
         <p>
@@ -21,7 +21,7 @@
     </form>
     <script>
         function calcIdade(){
-            let= new Date().getFullYear()
+            let atual= new Date().getFullYear()
             idad.innerHTML=Number(atual)-Number(inasc.value)
         }
     </script>
