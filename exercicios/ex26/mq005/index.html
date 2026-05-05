@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>World News</h1>
+        <span id="menu-icon" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#americas">Americas</a> </li>
+                <li><a href="">Asia</a> </li>
+                <li><a href="">Europa</a> </li>
+                <li><a href="">Africa</a> </li>
+                <li><a href="">Australia</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article id="americas">
+            <h2>Americas</h2>
+
+            <h3>O que se sabe sobre o vírus que causou mortes em cruzeiro no Atlântico</h3>
+            <p>A Organização Mundial da Saúde (OMS) afirma acreditar que pode ter havido transmissão de hantavírus de pessoa para pessoa no navio de cruzeiro holandês onde três passageiros morreram.
+                <br>
+            Os casos aconteceram a bordo do navio de cruzeiro MV Hondius, que viajava da Argentina para Cabo Verde.
+                <br>
+            O vírus geralmente é transmitido por roedores, mas a OMS disse que, neste caso, ele pode ter sido espalhado entre "contatos realmente próximos" a bordo da embarcação MV Hondius, antes de enfatizar que esse tipo de transmissão é raro e que o risco para o público é baixo.
+                <br>
+            "Algumas pessoas no navio eram casais, compartilhavam cabines, portanto é um contato bastante íntimo", disse a autoridade da OMS, Maria Van Kerkhove.
+                <br>
+            A OMS suspeita que a primeira pessoa a adoecer pode ter contraído o vírus antes de embarcar no navio, acrescentou ela.
+                <br>
+            Cerca de 149 pessoas de 23 países permanecem a bordo do navio sob "medidas rigorosas de precaução", informou a operadora do cruzeiro, a Oceanwide Expeditions. De acordo com a OMS, a embarcação está ancorada na costa de Cabo Verde desde segunda-feira.
+                <br>
+            Até agora, sete casos de hantavírus — dois confirmados e cinco suspeitos — foram identificados pelas autoridades.
+                <br>
+            Dois dos passageiros que morreram eram um casal holandês. Está confirmado que a esposa tinha o vírus.</p>
+
+            <p>Outro passageiro, um cidadão britânico de 69 anos que foi evacuado para a África do Sul para tratamento médico, também foi confirmado como portador do vírus.
+                <br>
+            Ainda não foi confirmado se o marido da mulher holandesa ou no outro passageiro falecido — um cidadão alemão que morreu em 2 de maio — tinham hantavírus.
+                <br>
+            Em comunicado, a família do casal holandês afirmou: "A bela jornada que eles viveram juntos foi abrupta e permanentemente interrompida."
+                <br>
+            "Ainda somos incapazes de compreender que os perdemos. Desejamos levá-los para casa e homenageá-los em paz e privacidade."
+                <br>
+            Testes estão sendo realizados em outros passageiros e membros da tripulação que apresentam sintomas.
+                <br>
+            Entenda, a seguir, o que se sabe sobre o hantavírus.</p>
+
+            <p>O hantavírus é uma cepa de vírus transmitida por roedores. A contaminação de humanos acontece principalmente pela inalação de partículas suspensas no ar provenientes de fezes secas dos animais.
+                <br>
+            As infecções geralmente ocorrem quando o vírus é transportado pelo ar a partir da urina, fezes ou saliva de um roedor, de acordo com os Centros de Controle e Prevenção de Doenças dos EUA (CDC).
+                <br>
+            Embora seja mais raro, ele também pode se espalhar por meio de mordidas ou arranhões de roedores.
+                <br>
+            O vírus pode causar duas doenças graves. A primeira, Síndrome Pulmonar por Hantavírus (HPS, na sigla em inglês), geralmente começa com fadiga, febre e dores musculares, seguidas de dores de cabeça, tonturas, calafrios e problemas abdominais. Se os sintomas respiratórios se desenvolverem, a taxa de mortalidade é de aproximadamente 38%, de acordo com o CDC.
+                <br>
+            No Brasil, se apresenta na forma da Síndrome Cardiopulmonar por Hantavírus (SCPH), segundo o Ministério da Saúde.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display== 'block') {
+                itens.style.display= 'none'
+            } else {
+                itens.style.display= 'block'
+            }
+        }
+    </script>
+</body>
+</html>
