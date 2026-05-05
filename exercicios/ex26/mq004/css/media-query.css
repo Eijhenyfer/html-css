@@ -1,0 +1,119 @@
+/* Todas as outras mídias */
+
+/* Typical Device Breakpoints
+
+Small: 320px – 480px.
+Medium: 481px – 768px.
+Large (Tablet): 769px – 1024px.
+X-LARGE (Desktop): 1025px – 1200px.
+XX-LARGE (Large Desktop/4K): 1201px+
+*/
+
+@media print{
+    
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    body{
+        /* Background desnecessário */
+        background: url(../images/back-print.jpg);
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#print{
+        display: block;
+    }
+    img#tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { 
+    /*TABLET */
+    
+    body{
+        background: black url(../images/back-tablet.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+    }
+    img#pc{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) { 
+    /*DESKTOP */
+
+    body{
+        background: black url(../images/back-pc.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: block;
+    }
+    img#print{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+}
+@media screen and (min-width: 1201px) { 
+    /*TELAS GRANDES */
+
+    body{
+        background: black url(../images/back-tv.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+    img#tv{
+        display: block;
+    }
+}
